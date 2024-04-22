@@ -64,7 +64,8 @@ h2 {
 }
 
 #inbox-container, #property-container, #reservations-container {
-  margin: 20px 10px;
+  width: 70%; /* Slimmer width */
+  margin: 20px auto; /* Centering the box */
   padding: 20px;
   background: #fff;
   border-radius: 10px;
@@ -114,10 +115,7 @@ ul#userList li:hover, .property-item:hover, .reservation-item:hover {
   margin: 5px 0;
 }
 
-button, input[type="text"],
-input[type="number"],
-input[type="file"],
-button[type="submit"] {
+button, input[type="text"], input[type="number"], input[type="file"], button[type="submit"] {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
@@ -159,13 +157,13 @@ button.delete-button {
   }
 
   #inbox-container, #property-container, #reservations-container {
-      width: 100%;
+      width: 95%; /* Adjusted for mobile screens */
       float: none;
       margin-right: 0;
       margin-bottom: 10px;
   }
 
   .property-item, .reservation-item {
-      grid-template-columns: 1fr; 
+      grid-template-columns: 1fr; /* Adjust grid for mobile layout */
   }
 }
